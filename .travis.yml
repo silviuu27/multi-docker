@@ -21,10 +21,10 @@ after_success:
  - docker tag mdockertest/multi-nginx andrey0607/mdockertest:multi-nginx
  - docker tag mdockertest/multi-server andrey0607/mdockertest:multi-server
  - docker tag mdockertest/multi-worker andrey0607/mdockertest:multi-worker
- - docker push andrey0607/multi-client
- - docker push andrey0607/multi-nginx
- - docker push andrey0607/multi-server
- - docker push andrey0607/multi-worker
+ - docker push andrey0607/mdockertest:multi-client
+ - docker push andrey0607/mdockertest:multi-nginx
+ - docker push andrey0607/mdockertest:multi-server
+ - docker push andrey0607/mdockertest:multi-worker
 
 deploy:
  provider: elasticbeanstalk
